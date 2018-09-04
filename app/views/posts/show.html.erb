@@ -25,6 +25,7 @@
         <p>
 	    <%= comment.author %>:<br />
 	    <%= comment.comment_entry %>
+      <%= comment.created_at.in_time_zone("America/Chicago") %>
 	</p>
     <% end %>
 
